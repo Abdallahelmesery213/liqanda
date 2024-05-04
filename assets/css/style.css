@@ -85,7 +85,8 @@ header .nav2 .search input{
 }
 header .nav2 .search input::placeholder {
     color: #fff; 
-  }
+    font-size: 14px;
+}
 header .nav2 .search button{
     border: none;
     background: bottom;
