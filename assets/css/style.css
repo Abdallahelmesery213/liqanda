@@ -60,6 +60,7 @@
   
   .nav-bar.nav-mobile .hamburger {
     cursor: pointer;
+    z-index: 1000;
   }
   
   .nav-bar.nav-mobile .bar {
