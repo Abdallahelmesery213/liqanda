@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div class="nav2">
+                <!-- <div class="nav2">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="./index.html">HOME</a>
@@ -128,7 +128,66 @@
                           </div>
                         </div>
                       </nav>
-                </div>
+                </div> -->
+                <!-- nav-mobile -->
+                <nav class="nav-bar nav-mobile">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    
+                    <ul class="nav-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTS
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item active" href="#">Product 1</a></li>
+                              <li><a class="dropdown-item active" href="#">Product 2</a></li>
+                              <li><a class="dropdown-item active" href="#">Product 3</a></li>
+                            </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                DESIGNS
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item active" href="#">Design 1</a></li>
+                              <li><a class="dropdown-item active" href="#">Design 2</a></li>
+                              <li><a class="dropdown-item active" href="#">Design 3</a></li>
+                            </ul>
+                          </div>
+                      </li>
+    
+                      
+                      
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT US</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT US</a>
+                      </li>
+                    </ul>
+
+                    <form class="d-flex search">
+                        <img src="./assets/images/search.png" alt="search" class="imgSearch">
+                      <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+                      <button>
+                        <img src="./assets/images/right-arrow2.png" alt="enter">
+                      </button>
+                    </form>
+                    
+                    <!-- <a href="#" class="nav-branding">J.K.</a> -->
+                   
+                  </nav>
+
             </div>
         </header>
 
@@ -418,6 +477,27 @@
 
   <!-- Initialize Swiper -->
   <script>
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", () => {
+    /* Toggle active class */
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+    /* Toggle aria-expanded value */
+    let menuOpen = navMenu.classList.contains("active");
+    console.log(menuOpen)
+    let newMenuOpenStatus = menuOpen;
+    hamburger.setAttribute("aria-expanded", newMenuOpenStatus);
+    })
+    // close mobile menu
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    //   Need to add Toggle aria-expanded value here as well because it stays as true when you click a menu item
+    }))
+
 
     // swiper1
     var swiper = new Swiper(".mySwiper1", {

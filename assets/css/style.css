@@ -9,6 +9,100 @@
 *{
     font-family: nexaLight;
 }
+
+.nav-bar.nav-mobile {
+    min-height: 4.375em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .nav-bar.nav-mobile .nav-branding {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: color 500ms ease;
+  }
+  
+  .nav-bar.nav-mobile .nav-branding:hover, .nav-branding:focus {
+    color: dodgerblue;
+  }
+  
+  .nav-bar.nav-mobile .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 3.375em;
+    flex-direction: column;
+    
+    width: 50%;
+     height: 100%;
+    text-align: center;
+    transition: 750ms;
+  }
+  
+  .nav-bar.nav-mobile .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-bar.nav-mobile .nav-item {
+    margin: 1em 0;
+    list-style: none;
+  }
+  
+  .nav-bar.nav-mobile .nav-link {
+    transition: 400ms ease;
+  }
+  
+  /* .nav-bar.nav-mobile .nav-link:hover, .nav-link:focus {
+    color: dodgerblue;
+  
+  } */
+  
+  .nav-bar.nav-mobile .hamburger {
+    cursor: pointer;
+  }
+  
+  .nav-bar.nav-mobile .bar {
+    display: block;
+    background-color: #fff;
+    width: 24px;
+    /* The following 2 properties are essential in creating the "X" when the hamburger is clicked. If you change just 1 of the 2, then you need to find the proper combination for the other one */
+    height: 2px;
+    margin: 6px auto;
+  
+    /*    -webkit-transition: all 300ms ease;  */
+    transition: all 300ms ease-in-out;
+  }
+  
+  .nav-bar.nav-mobile .hamburger.active .bar:nth-child(2) {
+    opacity: 0
+  }
+  
+  .nav-bar.nav-mobile .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .nav-bar.nav-mobile .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  @media (min-width: 768px) {
+  
+      .nav-bar.nav-mobile .nav-menu {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      width: auto;
+    }
+  
+    .nav-bar.nav-mobile .hamburger {
+      display: none;
+    }
+  }
+
 /* start header */
 header{
     position: absolute;
@@ -33,14 +127,36 @@ header .line{
     border-bottom: 1px solid #858382;
     margin: 10px 0;
 }
-header .nav2 nav a{
+header nav a{
     color: #fff;
 }
-header .nav2 .nav-link:focus,
-header .nav2 .nav-link:hover,
-header .nav2 .navbar-brand:focus,
+header .form-control:focus {
+    background: bottom;
+}
+header .form-control{
+    color: #fff;
+}
+header .nav-item .dropdown button{
+    background: bottom;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background: #464747;
+    color: #fff;
+}
+.dropdown-menu.show{
+    padding: 0;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    background-color: #ccc;
+}
+header .nav-item a,
+header .nav-link:focus,
+header .nav-link:hover,
+header .navbar-brand:focus,
 .navbar-brand:hover {
-
     color: #fff;
 }
 header .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -54,7 +170,7 @@ header.navbar-expand-lg .navbar-nav .dropdown-menu,
 header ul li a.dropdown-item {
     color: #000;
 }
-header .nav2 .search{
+header .search{
     position: relative;
     width: 35%;
     height: auto;
@@ -67,7 +183,7 @@ header img.imgSearch{
     top: 50%;
     transform: translateY(-50%);
 }
-header .nav2 .search input{
+header .search input{
     position: absolute;
     width: 80%;
     height: 100%;
@@ -77,22 +193,22 @@ header .nav2 .search input{
     border-radius: 0;
     border: none;
     outline: none;
-    color: #fff;
+    color: #fff !important;
     background: bottom;
 }
 .form-control:focus{
     box-shadow: none;
 }
-header .nav2 .search input::placeholder {
+header .search input::placeholder {
     color: #fff; 
     font-size: 14px;
 }
-header .nav2 .search button{
+header .search button{
     border: none;
     background: bottom;
     right: 2%;
 }
-header .nav2 .search button img{
+header .search button img{
     position: absolute;
     width: 7%;
     height: 30%;
@@ -623,3 +739,16 @@ object-fit: cover;
     top: 40%;
 }
 /* end swiper3 */
+/* start media query */
+@media (max-width: 768px) {
+    .nav-bar.nav-mobile .nav-menu {
+        background-color: #fff;
+        /* opacity: 80%; */
+        color: #000;
+    }
+    header .nav-item a,
+    header .nav-item .dropdown button{
+        color: #000;
+    }
+}
+/* end media query */
