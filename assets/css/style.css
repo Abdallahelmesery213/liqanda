@@ -43,7 +43,7 @@
   
   .nav-bar.nav-mobile .nav-menu.active {
     left: -7%;
-    top: 12%;
+    /* top: 12%; */
   }
   
   .nav-bar.nav-mobile .nav-item {
