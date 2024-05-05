@@ -41,7 +41,7 @@
   }
   
   .nav-bar.nav-mobile .nav-menu.active {
-    left: 0;
+    left: -7%;
   }
   
   .nav-bar.nav-mobile .nav-item {
@@ -742,7 +742,11 @@ object-fit: cover;
 /* start media query */
 @media (max-width: 768px) {
     .nav-bar.nav-mobile .nav-menu {
-        background-color: #fff;
+        background-image: url(./../images/pattern.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* background-color: #fff; */
         /* opacity: 80%; */
         color: #000;
     }
