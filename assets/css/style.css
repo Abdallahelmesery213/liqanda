@@ -884,6 +884,15 @@ header .left-part,
     .swiper1-mob .card .card-body {
         background-color: #f6f6f0;
     }
+    .cover .text {
+        width: 90%;
+    }
+    .cover .text button {
+        padding: 7px 0;
+    }
+    .about p{
+        width: 100%;
+    }
 }
 @media (max-width: 575px){
     .swiper1-mob .main-card{
@@ -894,6 +903,22 @@ header .left-part,
         margin-left: auto;
         margin-right: auto;
         border-radius: 0;
+    }
+    .cover .text {
+        width: 100%;
+    }
+    .cover .text h3,
+    .about h3 {
+        font-size: 28px;
+    }
+    .cover .text p, .about p {
+        width: 90%;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    .about{
+        padding-bottom: 0;
     }
 }
 @media (max-width: 425px){
