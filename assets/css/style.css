@@ -930,6 +930,20 @@ header .left-part,
     .office .line{
         display: none;
     }
+    .product1 .productt h4{
+        font-size: 20px;
+    }
+    .product1 .productt p {
+        font-size: 15px;
+        line-height: 17px;
+        width: 100%;
+    }
+    .product1 .productt span.discount {
+        font-size: 14px;
+    }
+    .product1 .productt strong {
+        font-size: 16px;
+    }
 }
 @media (max-width: 425px){
     .join-us .email-input{
