@@ -1001,6 +1001,9 @@ header .left-part,
     .swiper1-mob .main-card{
         margin-bottom: 0;
     }
+    .swiper1-mob .main-card img{
+        height: 250px;
+    }
     .swiper1-mob .card{
         width: 100% !important;
         margin-left: auto;
@@ -1083,6 +1086,9 @@ header .left-part,
     }
     .swiper1-mob .card, .swiper1-mob .main-card {
         min-height: 325px;
+    }
+    .swiper1-mob .main-card img{
+        height: 200px;
     }
 }
 @media (max-width: 407px) {
