@@ -1002,7 +1002,7 @@ header .left-part,
         margin-bottom: 0;
     }
     .swiper1-mob .card{
-        width: 85% !important;
+        width: 100% !important;
         margin-left: auto;
         margin-right: auto;
         border-radius: 0;
@@ -1057,6 +1057,14 @@ header .left-part,
     .swiper3 .swiper-slide .text span.discount{
         font-size: 16px;
     }
+    .swiper1-mob .card .card-body strong {
+        font-size: 16px;
+    }
+}
+@media (max-width: 475px){
+    .swiper1-mob .card, .swiper1-mob .main-card {
+        min-height: 350px;
+    }
 }
 @media (max-width: 425px){
     .join-us .email-input{
@@ -1073,6 +1081,9 @@ header .left-part,
         font-size: 12px;
         line-height: 14px;
     }
+    .swiper1-mob .card, .swiper1-mob .main-card {
+        min-height: 325px;
+    }
 }
 @media (max-width: 407px) {
     .join-us h3 {
@@ -1080,6 +1091,13 @@ header .left-part,
     }
     .join-us p {
         font-size: 15px;
+    }
+    .swiper1-mob .text h3 {
+        font-size: 28px;
+    }
+    .swiper1-mob .text p {
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 @media (max-width: 363px) {
