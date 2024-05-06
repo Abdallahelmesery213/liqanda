@@ -756,7 +756,105 @@ header .left-part,
     display: none;
 }
 /* start media query */
-
+@media (max-width: 1270px) {
+    .product .text {
+        width: 35%;
+    }
+}
+@media (max-width: 1190px) {
+    .product {
+        height: 740px;
+    }
+    .product .text p{
+        width: 100%;
+    }
+}
+@media (max-width: 1040px) {
+    .product {
+        height: 650px;
+    }
+}
+@media (max-width: 915px) {
+    .product {
+        height: 530px;
+    }
+}
+@media (max-width: 745px) {
+    .product {
+        height: 450px;
+    }
+    .product .text h3{
+        font-size: 28px;
+    }
+    .product .text p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    .product .text button {
+        width: 55%;
+        font-size: 14px;
+        padding: 1px 0;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 630px) {
+    .product {
+        height: 350px;
+    }
+    .product .text {
+        width: 43%;
+    }
+}
+@media (max-width: 565px) {
+    .product {
+        height: 305px;
+    }
+    .product .text h3 {
+        font-size: 22px;
+        line-height: 15px;
+    }
+    .product .text p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 495px) {
+    .product {
+        height: 295px;
+    }
+}
+@media (max-width: 475px) {
+    .product {
+        height: 240px;
+    }
+}
+@media (max-width: 453px) {
+    .product {
+        height: 220px;
+    }
+    .product .text h3 {
+        font-size: 18px;
+        line-height: 11px;
+    }
+    .product .text button {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 445px) {
+    .product .text {
+        width: 47%;
+    }
+}
+@media (max-width: 380px) {
+    .product .text button {
+        margin-top: 2px;
+    }
+    .product .text h3 {
+        font-size: 15px;
+        line-height: 5px;
+    }
+}
 @media (max-width: 991px) {
     .join-us .text {
         width: 90%;
@@ -966,6 +1064,14 @@ header .left-part,
     }
     .join-us .email-input input {
         font-size: 15px;
+    }
+    .product .text button {
+        padding: 0;
+        margin-top: 7px;
+    }
+    .product .text p {
+        font-size: 12px;
+        line-height: 14px;
     }
 }
 @media (max-width: 407px) {
