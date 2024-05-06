@@ -753,6 +753,12 @@ header .left-part,
     display: none;
 }
 /* start media query */
+
+@media (max-width: 991px) {
+    .join-us .text {
+        width: 90%;
+    }
+}
 @media (max-width: 767px) {
     .slider {
         display: none;
@@ -825,12 +831,39 @@ header .left-part,
         /* width: 20%; */
     }
     .logo-mobile img{
-        width: 60%;
+        width: 50%;
     }
     header .left-part img,
     header .right-part img{
         width: 20px;
         height: 20px;
+    }
+    .join-us h3 {
+        font-size: 28px;
+    }
+    .join-us p{
+        line-height: 20px;
+    }
+}
+@media (max-width: 425px){
+    .join-us .email-input{
+        height: 35px;
+    }
+    .join-us .email-input input {
+        font-size: 15px;
+    }
+}
+@media (max-width: 407px) {
+    .join-us h3 {
+        font-size: 21px;
+    }
+    .join-us p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 363px) {
+    header .logo-mobile{
+        width: 90%;
     }
 }
 @media (max-width: 363px) {
