@@ -995,6 +995,10 @@ header .left-part,
     }
     .office .office1{
         margin-bottom: 30px;
+        height: 320px;
+    }
+    .office .office2{
+        height: 320px;
     }
 }
 @media (max-width: 575px){
@@ -1025,10 +1029,6 @@ header .left-part,
     }
     .about{
         padding-bottom: 0;
-    }
-    .office .office1,
-    .office .office2{
-        height: 450px;
     }
     .office .line{
         display: none;
@@ -1067,6 +1067,13 @@ header .left-part,
 @media (max-width: 475px){
     .swiper1-mob .card, .swiper1-mob .main-card {
         min-height: 350px;
+    }
+    .office .office1,
+    .office .office2{
+        height: 260px;
+    }
+    .office .office1 h3, .office .office2 h3 {
+        font-size: 28px;
     }
 }
 @media (max-width: 425px){
@@ -1109,6 +1116,9 @@ header .left-part,
 @media (max-width: 363px) {
     header .logo-mobile{
         width: 90%;
+    }
+    .office .office1, .office .office2 {
+        height: 200px;
     }
 }
 @media (max-width: 363px) {
