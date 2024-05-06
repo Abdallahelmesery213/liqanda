@@ -750,7 +750,9 @@ header .logo-mobile,
 header .right-part,
 header .left-part,
 .swiper1-mob,
-.slider-mobile{
+.slider-mobile,
+.swiper-button-next,
+.swiper-button-next{
     display: none;
 }
 /* start media query */
@@ -942,6 +944,19 @@ header .left-part,
         font-size: 14px;
     }
     .product1 .productt strong {
+        font-size: 16px;
+    }
+    .swiper-button-next,
+    .swiper-button-next{
+        display: block;
+    }
+    .swiper3 .swiper-slide .text h5 {
+        font-size: 19px;
+    }
+    .swiper3 .swiper-slide .text p, .swiper3 .swiper-slide .text strong {
+        font-size: 17px;
+    }
+    .swiper3 .swiper-slide .text span.discount{
         font-size: 16px;
     }
 }
