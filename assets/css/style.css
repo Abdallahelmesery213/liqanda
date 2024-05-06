@@ -893,6 +893,9 @@ header .left-part,
     .about p{
         width: 100%;
     }
+    .office .office1{
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 575px){
     .swiper1-mob .main-card{
@@ -919,6 +922,13 @@ header .left-part,
     }
     .about{
         padding-bottom: 0;
+    }
+    .office .office1,
+    .office .office2{
+        height: 450px;
+    }
+    .office .line{
+        display: none;
     }
 }
 @media (max-width: 425px){
