@@ -606,7 +606,10 @@ width: 100%;
 
 /* start about */
 .about{
-    background-color: #f6f6f0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./../images/about-pattern.png);
+    /* background-color: #f6f6f0; */
     padding: 60px 0;
 }
 .about h3{
