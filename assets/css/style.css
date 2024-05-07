@@ -34,7 +34,7 @@
     left: -100%;
     top: 3.375em;
     flex-direction: column;
-    padding-left: 10%;
+    /* padding-left: 10%; */
     width: 55%;
      height: 100%;
     text-align: left;
@@ -861,6 +861,9 @@ header .left-part,
     }
 }
 @media (max-width: 767px) {
+    .nav-bar.nav-mobile .nav-menu {
+        padding-left: 10%;
+    }
     .slider, .swiper1{
         display: none;
     }
