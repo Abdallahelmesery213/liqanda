@@ -242,7 +242,9 @@ header .search button img{
     margin-bottom: 2rem;
 }
 .carousel-indicators [data-bs-target]{
-    width: 60px;
+    width: 70px;
+    height: 4px;
+    margin-left: 5px;
 }
 .carousel-caption{
     width: 50%;
@@ -270,9 +272,11 @@ header .search button img{
 /* end header */
 /* start join us */
 .join-us{
-    /* background-color: #e3e2e2; */
     padding: 60px 0;
-    background-image: linear-gradient(#e3e2e2, #f6f6f0);
+    background-image: url(./../images/join-pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: linear-gradient(#e3e2e2, #f6f6f0); */
 }
 .join-us .text{
     width: 50%;
