@@ -3,6 +3,10 @@
     src: url(./../fonts/Nexa\ Light.otf);
 }
 @font-face{
+    font-family: nexaThin;
+    src: url(./../fonts/Nexa-Thin.ttf);
+}
+@font-face{
     font-family: nexaBold;
     src: url(./../fonts/Nexa\ Bold.otf);
 }
@@ -260,9 +264,17 @@ header .search button img{
     width: 50%;
     margin: auto;
     right: auto;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.carousel-caption h5{
+    letter-spacing: 18px;
+}
+.carousel-caption h2{
+    letter-spacing: 25px;
+    font-family: nexaThin;
+    font-size: 90px;
 }
 .carousel-caption img{
     width: 100%;
