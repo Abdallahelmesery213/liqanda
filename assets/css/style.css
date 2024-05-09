@@ -781,7 +781,7 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 footer .footer{
     display: flex;
@@ -791,7 +791,7 @@ footer .footer h5{
     color: #282828;
     opacity: 80%;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 22px;
     width: 70%;
     text-align: center;
 }
