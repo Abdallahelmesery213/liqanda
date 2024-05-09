@@ -773,6 +773,29 @@ object-fit: cover;
     top: 40%;
 }
 /* end swiper3 */
+/* start footer */
+footer{
+    /* min-height: 40px; */
+    width: 100%;
+    background-image: url(./../images/pattern-footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+}
+footer .footer{
+    display: flex;
+    align-items: center;
+}
+footer .footer h5{
+    color: #282828;
+    opacity: 80%;
+    margin-bottom: 0;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+}
+/* end footer */
 
 /* start un-mobile */
 header .logo-mobile,
@@ -1097,6 +1120,13 @@ header .left-part,
     }
     .swiper1-mob .card .card-body strong {
         font-size: 16px;
+    }
+    footer .footer{
+        flex-direction: column;
+    }
+    footer .footer img{
+        width: 65%;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 475px){
