@@ -1128,6 +1128,9 @@ header .left-part,
         width: 65%;
         margin-bottom: 20px;
     }
+    footer .footer h5{
+        width: 100%;
+    }
 }
 @media (max-width: 475px){
     .swiper1-mob .card, .swiper1-mob .main-card {
