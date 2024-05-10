@@ -629,6 +629,8 @@
     // swiper2
     var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 2,
+        initialSlide: 2,
+        slidesPerGroup: 2,
         spaceBetween: 30,
         centeredSlides: false,
         grabCursor: true,
@@ -637,12 +639,12 @@
       keyboard: {
         enabled: true,
       },
-      breakpoints: {
-        769: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-        },
-      },
+    //   breakpoints: {
+    //     769: {
+    //       slidesPerView: 2,
+    //       slidesPerGroup: 2,
+    //     },
+    //   },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -653,6 +655,7 @@
       },
       scrollbar: {
         el: ".swiper-scrollbar",
+        draggable: true,
       },
     });
 
