@@ -959,6 +959,9 @@ header .left-part,
     .nav-bar.nav-mobile .nav-item {
         margin-top: 20px;
     }
+    .navbar-full .dropdown-menu{
+        inset: auto !important;
+    }
     .slider, .swiper1{
         display: none;
     }
