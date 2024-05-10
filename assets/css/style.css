@@ -524,7 +524,9 @@ header .search button img{
     width: 100%;
     height: 100%;
 }
-
+.swiper2 {
+    margin-bottom: 40px;
+}
 .swiper2 .swiper-slide {
 display: flex;
 flex-direction: column;
@@ -532,12 +534,25 @@ align-items: center;
 justify-content: center;
 position: relative;
 }
-
+.swiper2 .mySwiper2 .swiper-wrapper{
+    padding: 50px 0;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 5px;
+}
+.swiper-scrollbar-drag{
+    background: #7c7c7c;
+}
 .swiper2 .swiper-slide img {
 display: block;
 width: 100%;
 }
-
+.swiper2 .swiper-slide h3{
+    color: #fffefe;
+    text-align: center;
+    font-size: 35px;
+    position: absolute;
+}
 @media only screen and (min-width: 769px) {
 .swiper2 .swiper-slide:first-child {
     transition: transform 100ms;
@@ -1071,6 +1086,9 @@ header .left-part,
         margin-left: auto;
         margin-right: auto;
         border-radius: 0;
+    }
+    .swiper2 .swiper-slide h3{
+        font-size: 28px;
     }
     .cover .text {
         width: 100%;
