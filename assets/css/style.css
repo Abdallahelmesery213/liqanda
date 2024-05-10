@@ -14,6 +14,31 @@
     font-family: nexaLight;
 }
 
+.navbar-full .dropdown-menu {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    inset: auto 0 !important;
+    transform: none !important;
+    min-height: 50vh;
+}
+
+.navbar-full .dropdown, .navbar-full .navbar-nav .nav-item.dropdown {
+    position: static !important;
+}
+.navbar-before .navbar-nav .dropdown-menu:before {
+    content: '';
+    background: #f00;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+	z-index: 10;
+}
+
 .nav-bar.nav-mobile {
     min-height: 4.375em;
     position: relative;
@@ -161,8 +186,8 @@ header .nav-item .dropdown button{
     color: #fff;
 }
 .dropdown-item.active, .dropdown-item:active{
-    background: #464747;
-    color: #fff;
+    background: #fff;
+    color: #464747;
 }
 .dropdown-menu.show{
     padding: 0;
