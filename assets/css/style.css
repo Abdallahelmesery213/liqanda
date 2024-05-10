@@ -977,6 +977,8 @@ header .left-part,
     }
     .navbar-full .dropdown-menu{
         inset: auto !important;
+        height: 70vh;
+        overflow-y: scroll;
     }
     .slider, .swiper1{
         display: none;
