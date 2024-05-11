@@ -25,6 +25,10 @@
     margin-top: 10px !important;
     padding: 20px;
     border-radius: 0;
+    background-image: url(./../images/join-pattern.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 nav .dropdown-menu .title{
     display: flex;
@@ -200,7 +204,7 @@ header .nav-item .dropdown button{
     color: #fff;
 }
 .dropdown-item.active, .dropdown-item:active{
-    background: #f7f7f7;
+    background: bottom;
     color: #464747;
     padding: 0;
     font-size: 14px;
@@ -1121,6 +1125,12 @@ header .left-part,
     }
 }
 @media (max-width: 575px){
+    nav .dropdown-menu h5{
+        font-size: 14px;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        font-size: 13px;
+    }
     .swiper1-mob .main-card{
         margin-bottom: 0;
     }
